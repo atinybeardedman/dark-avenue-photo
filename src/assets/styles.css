@@ -1,0 +1,9 @@
+/* Global Styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background:#1a1a1a;
+    color: #F8F9FA;
+}
