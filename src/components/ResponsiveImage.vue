@@ -1,9 +1,11 @@
 <template>
   <v-lazy-image
+    @contextmenu.native="prevent($event)"
     :alt="alt"
     :srcset="srcset"
     :sizes="calcSizes"
     :src="sources.mediumLarge.sourceUrl"
+    :draggable="false"
   />
 </template>
 
@@ -51,6 +53,11 @@ export default {
       return result.join(",");
     },
   },
+  methods: {
+      prevent(e){
+          e.preventDefault();
+      }
+  }
 };
 </script>
 
