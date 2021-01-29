@@ -64,6 +64,10 @@ export default {
 <style scoped>
 .v-lazy-image {
   height: 100%;
+  width:100%;
+  max-height: 80vh;
+  max-width: 50vw;
+  object-fit: contain;
   opacity: 0;
   transform: translate3d(0, 50%, 0);
   transition: opacity 0.5s, transform 0.5s;
@@ -71,5 +75,11 @@ export default {
 .v-lazy-image-loaded {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width:600px) {
+    .v-lazy-image {
+        max-width: 90vw;
+    }
 }
 </style>

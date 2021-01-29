@@ -74,4 +74,13 @@ nav-bar{
   }
 }
 
+@media screen and (min-width: 1000px){
+  .main-wrapper {
+    grid-template-columns: 300px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header main"
+  }
+}
+
 </style>
