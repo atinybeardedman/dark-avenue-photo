@@ -21,16 +21,21 @@ export default {
 </script>
 
 <style>
+
     nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 100%;
+        width: 100vw;
         padding: 1em;
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        background: #eee;
+        border-bottom: 1px #eee solid;
+        background:#1a1a1a;
+        height: 4em;
+        
+    }
+
+    .logo {
+        text-align: center;
     }
     .categories{
         display: flex;
@@ -40,7 +45,7 @@ export default {
     nav a{
         margin: 0 1em;
         text-decoration: none;
-        color: black;
+        color: #eee;
         text-transform: uppercase;
          position: relative;
     }
@@ -48,7 +53,7 @@ export default {
         content: "";
         width:0px;
         height: 2px;
-        background: black;
+        background: #eee;
         margin: 2px 0 0;
         transition: opacity 0.5s, width 0.5s;
         opacity: 0;
@@ -60,4 +65,19 @@ export default {
         width: 100%;
         opacity: 1;
     }
+
+    @media screen and (max-width:600px) {
+    .logo, .categories {
+        flex:1;
+    }
+
+    .categories {
+        font-size: 0.8rem;
+    }
+
+    nav {
+        flex-wrap:wrap;
+        height: 6em;
+    }
+}
 </style>

@@ -1,7 +1,11 @@
 <template>
-  <div class="layout">
+  <div class="main-wrapper">
       <nav-bar :links="$static.allWordPressCategory.edges" />
-    <slot/>
+      <transition name="fade" appear>
+        <main>
+          <slot/>
+        </main>
+      </transition>
   </div>
 </template>
 
@@ -32,13 +36,42 @@ export default {
 body {
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
-  padding:56px 0;
   line-height: 1.5;
 }
 
-.layout {
-  max-width: 90vw;
-  margin: 0 auto;
+.main-wrapper {
+  display:grid;
+  grid-template-columns: auto;
+  grid-template-rows: 4em auto;
+  grid-template-areas: 
+  "header"
+  "main";
+  height: 100vh;
+}
+
+main {
+    overflow: auto;
+    padding: 0 1em;
+    grid-area: main;
+}
+
+nav-bar{
+  grid-area: header;
+}
+
+
+.fade-enter-active {
+  transition: opacity .5s;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .main-wrapper {
+    grid-template-rows: 6em auto;
+  }
 }
 
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <Layout>
-      <h1>Category: {{$page.wordPressCategory.title}}</h1>
+  <Layout :key="$route.fullPath">
       <section class="container">
           <div class="photo" v-for="{node} in $page.wordPressCategory.belongsTo.edges" :key="node.id">
                <responsive-image
@@ -68,7 +67,8 @@ export default {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .photo{
