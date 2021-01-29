@@ -10,6 +10,7 @@
 <style>
 .home{
   display: flex;
+  height: 100%;
 }
 
 .home .title {
