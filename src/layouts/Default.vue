@@ -32,9 +32,16 @@ export default {
   }
 }
 </script>
-<style>
+<style lang="scss">
+
+@font-face {
+  font-family: 'Typo Round';
+  src: url('../assets/Typo_Round_Light.otf');
+  font-weight: normal;
+}
+
 body {
-  font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-family: 'Typo Round';
   margin:0;
   line-height: 1.5;
 }
@@ -76,7 +83,7 @@ nav-bar{
 
 @media screen and (min-width: 1000px){
   .main-wrapper {
-    grid-template-columns: 300px auto;
+    grid-template-columns: 250px auto;
     grid-template-rows: auto;
     grid-template-areas: 
     "header main"

@@ -16,6 +16,7 @@
 .home .title {
   margin: auto;
   font-size: 4em;
+  font-weight:400;
 }
 
 </style>

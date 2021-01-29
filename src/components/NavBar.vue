@@ -100,12 +100,14 @@ a.active::after {
   }
 
   .categories {
-    flex: 1;
+    height: 100%;
+    justify-content: start;
   }
 
   .categories a {
-      width: 100%;
-      text-align: center;
+      /* width: 100%; */
+      padding-top: 2em;
+      /* text-align: center; */
       font-size: 1.25rem;
   }
 
@@ -113,6 +115,7 @@ a.active::after {
     height: 100%;
     border-right: 1px solid #eee;
     border-bottom: none;
+    justify-content: start;
   }
 }
 </style>
