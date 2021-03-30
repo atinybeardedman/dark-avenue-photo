@@ -58,7 +58,6 @@ body {
 
 main {
     overflow: auto;
-    padding: 0 1em;
     grid-area: main;
 }
 
