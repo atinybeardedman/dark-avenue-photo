@@ -6,6 +6,9 @@
 
 module.exports = {
   siteName: 'Dark Avenue Photography',
+  siteUrl: 'https://www.darkavenuephotography.com',
+  titleTemplate: '%s',
+  description: 'Dark Avenue Photography is a showcase of the photography by Ezra Gumpel-Jones',
   plugins: [
     {
       use: '@gridsome/source-wordpress',
