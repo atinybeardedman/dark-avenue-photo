@@ -1,14 +1,5 @@
-# Default starter for Gridsome
+# Dark Avenue Photography Site
 
-This is the project you get when you run `gridsome create new-project`.
+[Live Site](www.darkavenuephotography.com)
 
-### 1. Install Gridsome CLI tool if you don't have
-
-`npm install --global @gridsome/cli`
-
-### 2. Create a Gridsome project
-
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+This is the repo for the darkavenuephotography.com website. This site is a simple photoblog built with Gridsome. The content is being fetched from Wordpress, to take advantage of an easy-to-use CMS to uploading photos and categorizing and sorting. It makes use of the JAMstack plugin in Wordpress to rebuild this static site on Netlify whenever an image is posted or removed.
