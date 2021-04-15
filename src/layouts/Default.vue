@@ -12,7 +12,7 @@
 
 <static-query>
 query {
-  allWordPressCategory {
+  allWordPressCategory (sortBy: "title", order: ASC) {
     edges {
       node {
         id,

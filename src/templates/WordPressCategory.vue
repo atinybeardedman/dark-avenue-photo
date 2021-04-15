@@ -17,7 +17,7 @@
 query WordPressCategory ($id:ID!, $page: Int) {
     wordPressCategory(id: $id){
         title,
-        belongsTo(page: $page, sortBy: "title") {
+        belongsTo(page: $page, sortBy: "title", order: ASC) {
             pageInfo {
                 totalPages
             }
@@ -55,11 +55,6 @@ query WordPressCategory ($id:ID!, $page: Int) {
 import ResponsiveImage from '~/components/ResponsiveImage.vue'
 export default {
   components: { ResponsiveImage },
-    // metaInfo(){
-    //     return {
-    //         title: this.$page.wordPressCategory.title
-    //     }
-    // }
 }
 </script>
 
