@@ -5,12 +5,12 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Dark Sky Photography',
+  siteName: 'Dark Avenue Photography',
   plugins: [
     {
       use: '@gridsome/source-wordpress',
       options: {
-        baseUrl: 'https://dev.brandonduran.com/darkavenue/',
+        baseUrl: 'http://wp.darkavenuephotography.com/',
         apiBase: '?rest_route=/',
         typeName: 'WordPress', // GraphQL schema name
       }
