@@ -9,11 +9,7 @@
         ></g-image>
         <g-image
           class="with-text"
-          src="~/assets/images/logo.png"
-          width="200"
-          height="120"
-          fit="cover"
-          quality="100"
+          src="~/assets/images/logo-small.png"
         ></g-image>
       </g-link>
     </div>
@@ -106,23 +102,6 @@ a.active::after {
   opacity: 1;
 }
 
-@media screen and (max-width: 600px) {
-  nav .logo a {
-    display: inline-block;
-    height: 100%;
-    padding: 1em 0;
-  }
-
-  .categories {
-    font-size: 0.8rem;
-  }
-
-  nav {
-    height: 5em;
-    padding: 0;
-  }
-}
-
 @media screen and (min-width: 1000px) {
   nav,
   .categories {
@@ -141,9 +120,8 @@ a.active::after {
 
   .logo {
     flex: 0 1 auto;
-    padding: 1em 0;
     border-bottom: 1px #eee solid;
-    width: 80%;
+    width: 90%;
     height: auto;
   }
 
