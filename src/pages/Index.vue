@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <section class="home">
-      <h1 class="title">Dark Avenue Photo</h1>
+      <div class="logo-title">
+        <g-image src="~/assets/images/logo.png" width="800" quality="90"></g-image>
+      </div>
     </section>
 
   </Layout>
@@ -19,12 +21,16 @@
   background-blend-mode: darken;
 }
 
-.home .title {
+.home .logo-title {
   margin: auto;
   font-size: 4em;
   font-weight:400;
   width: 100%;
   text-align: center;
+}
+
+.home .logo-title img {
+  width: min(90%, 800px)
 }
 
 </style>
