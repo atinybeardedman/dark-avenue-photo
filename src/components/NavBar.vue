@@ -5,11 +5,15 @@
         <g-image
           class="no-text"
           src="~/assets/images/logo-no-text.png"
-          width="200"
+          width="60"
+          height="43"
         ></g-image>
         <g-image
           class="with-text"
-          src="~/assets/images/logo-small.png"
+          src="~/assets/images/logo-small.png" 
+          width="132"
+          height="89"
+          
         ></g-image>
       </g-link>
     </div>
@@ -59,11 +63,6 @@ nav {
 .logo {
   text-align: center;
   height: inherit;
-}
-
-.logo img {
-  height: 90%;
-  width: auto;
 }
 
 .categories {
@@ -142,9 +141,5 @@ a.active::after {
     justify-content: start;
   }
 
-  .logo img {
-    width: 90%;
-    height: auto;
-  }
 }
 </style>
