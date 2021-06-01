@@ -32,7 +32,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
+<style scoped>
 
 @font-face {
   font-family: 'Typo Round';
@@ -51,7 +51,7 @@ body {
   grid-template-columns: auto;
   grid-template-rows: 4em auto;
   grid-template-areas: 
-  "header"
+  "nav"
   "main";
   height: 100vh;
 }
@@ -62,7 +62,7 @@ main {
 }
 
 nav-bar{
-  grid-area: header;
+  grid-area: nav;
 }
 
 
@@ -85,7 +85,7 @@ nav-bar{
     grid-template-columns: 250px auto;
     grid-template-rows: auto;
     grid-template-areas: 
-    "header main"
+    "nav main"
   }
 }
 
